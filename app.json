@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "ScanHisaab",
+    "slug": "receiptiq",
+    "scheme": "receiptiq",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#491A99",
+        "foregroundImage": "./assets/logo.png"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.daanishmufti.receiptiq"
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow ScanHisaab to use the camera to scan receipts.",
+          "photosPermission": "Allow ScanHisaab to access your photos to upload receipts."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow ScanHisaab to use the camera to scan receipts."
+        }
+      ],
+      [
+        "react-native-document-scanner-plugin",
+        {
+          "cameraPermission": "Allow ScanHisaab to use the camera to scan receipts."
+        }
+      ],
+      "expo-font",
+      "expo-notifications",
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6876fd55-465e-4b9e-9a46-37d654e1cc33"
+      }
+    }
+  }
+}

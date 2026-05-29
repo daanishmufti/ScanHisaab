@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="android:statusBarColor">#0E0A18</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <!--
+      Force the system navigation bar dark to match the app's dark theme; light icons.
+      `enforceNavigationBarContrast` (API 29+) defaults to true, which paints a white-ish
+      scrim *over* our color to "guarantee" button contrast — that scrim is what was
+      showing up as a white bar. Turning it off lets our dark color show through.
+      expo-navigation-bar (JS) can still override at runtime for the Light theme.
+    -->
+    <item name="android:navigationBarColor">#0E0A18</item>
+    <item name="android:windowLightNavigationBar">false</item>
+    <item name="android:enforceNavigationBarContrast" tools:targetApi="29">false</item>
+  </style>
+  <style name="Theme.App.SplashScreen" parent="AppTheme">
+    <item name="android:windowBackground">@drawable/ic_launcher_background</item>
+  </style>
+</resources>

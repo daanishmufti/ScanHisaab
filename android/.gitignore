@@ -1,0 +1,23 @@
+# OSX
+#
+.DS_Store
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+
+# Bundle artifacts
+*.jsbundle
+
+# Release signing — NEVER commit. Back these up somewhere safe & private instead;
+# losing the keystore or password means you can never update the app on Play.
+keystore.properties
+*.keystore
+!debug.keystore
+*.jks

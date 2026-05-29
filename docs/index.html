@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ScanHisaab - Receipt scanner & expense tracker</title>
+  <meta name="description" content="ScanHisaab scans paper receipts on your Android phone, extracts the merchant, date, and total with on-device OCR, and helps you track your expenses. 100% private - no data ever leaves your device.">
+  <style>
+    :root { --brand: #491A99; --ink: #1a1a1a; --muted: #666; --soft: #f4f1fb; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; color: var(--ink); line-height: 1.6; }
+    header { text-align: center; margin-bottom: 48px; }
+    h1 { color: var(--brand); font-size: 2.2rem; margin: 0 0 8px; }
+    .tagline { color: var(--muted); font-size: 1.1rem; margin: 0; }
+    h2 { color: var(--brand); margin-top: 40px; }
+    .pill { display: inline-block; padding: 4px 12px; background: var(--soft); color: var(--brand); border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin: 4px 4px 0 0; }
+    ul { padding-left: 24px; }
+    li { margin: 6px 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .links a { display: inline-block; padding: 10px 18px; background: var(--brand); color: white; text-decoration: none; border-radius: 8px; font-weight: 500; }
+    .links a.secondary { background: var(--soft); color: var(--brand); }
+    footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e5e5e5; color: var(--muted); font-size: 0.9rem; text-align: center; }
+    footer a { color: var(--brand); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ScanHisaab</h1>
+  <p class="tagline">Scan paper receipts and track your expenses, fully on-device.</p>
+</header>
+
+<p>ScanHisaab turns your phone's camera into a receipt scanner. Snap a photo of any paper receipt and the app extracts the merchant name, date, and total amount using Google ML Kit's on-device text recognition. All your scanned receipts live on your phone - nothing is uploaded to a server or shared with anyone.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Scan paper receipts with your phone's camera</li>
+  <li>Read merchant, date, and total automatically via on-device OCR</li>
+  <li>Track monthly spending and stay under a budget</li>
+  <li>View, edit, and delete past receipts</li>
+  <li>Get local budget-alert notifications</li>
+</ul>
+
+<h2>Privacy first</h2>
+<p>The whole point of ScanHisaab is that your receipts stay yours. The app:</p>
+<ul>
+  <li>Has no account or login</li>
+  <li>Sends zero data to any server (no analytics, no cloud sync, no telemetry)</li>
+  <li>Processes images entirely on your device</li>
+  <li>Stores everything in Android's standard app storage; uninstalling removes everything</li>
+</ul>
+
+<p>See the full <a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Categories &amp; topics</h2>
+<p>
+  <span class="pill">Finance</span>
+  <span class="pill">Receipt scanner</span>
+  <span class="pill">Expense tracker</span>
+  <span class="pill">Personal finance</span>
+  <span class="pill">Budgeting</span>
+  <span class="pill">On-device OCR</span>
+</p>
+
+<div class="links">
+  <a href="privacy.html">Privacy policy</a>
+  <a class="secondary" href="https://github.com/daanishmufti/ScanHisaab">Source code on GitHub</a>
+  <a class="secondary" href="mailto:daanishmufti@gmail.com">Contact</a>
+</div>
+
+<footer>
+  <p>&copy; 2026 Daanish Mufti &middot; <a href="mailto:daanishmufti@gmail.com">daanishmufti@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
